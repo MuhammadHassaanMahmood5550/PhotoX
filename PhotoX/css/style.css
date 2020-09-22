@@ -1,0 +1,374 @@
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* NAVBAR */
+.nav-menu {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: all 0.7s;
+}
+
+.navbaron-scroll {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  transition: all 0.4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.navbar-on-scroll {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+.menu-item {
+  color: #eee;
+  transition: color 0.5s;
+}
+.scroll-active{
+  color: #70aed2;
+}
+
+.size-nav-item{
+  font-size: 1.3rem;
+  transition: all .5s;
+}
+
+.menu-item:hover {
+  color: #70aed2;
+}
+
+/* HOME-SECTION */
+#home-section {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/header-img.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#home-section .home-heading {
+  animation-name: anim;
+  animation-duration: 2s;
+}
+
+#home-section .home-paragraph {
+  animation-name: anim;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#home-section .EP {
+  padding-top: 220px;
+}
+
+/* MISSION-SECTION */
+
+#mission-section .underline {
+  width: 150px;
+  border-bottom: 7px solid white;
+}
+
+#mission-section {
+  background: #151f20;
+}
+
+.anim2 {
+  animation-name: anim2;
+  animation-duration: 3s;
+}
+
+@keyframes anim2 {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.anim3 {
+  animation-name: anim3;
+  animation-duration: 3s;
+}
+
+@keyframes anim3 {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* collction-secton */
+#collection-section .underline {
+  width: 150px;
+  border-bottom: 7px solid white;
+}
+.card-shadow {
+  box-shadow: 10px 10px 20px #444;
+}
+
+#collection-section .heading {
+  position: absolute;
+  top: 185px;
+  right: 0;
+  letter-spacing: 1;
+  background: #222;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.4s;
+}
+
+#collection-section .heading:hover {
+  opacity: 1;
+}
+
+/* GALLERY-SECTION */
+#gallery-section .underline {
+  width: 150px;
+  border-bottom: 7px solid gray;
+}
+
+.gallery-list-item {
+  cursor: pointer;
+  user-select: none;
+}
+
+.active-item {
+  color: lightseagreen;
+}
+
+/* CUSTOMER-SECTION */
+#customer-section .underline {
+  width: 150px;
+  border-bottom: 7px solid #eee;
+}
+
+#customer-section {
+  background: #151f20;
+}
+
+/* JOIN-US-SECTION */
+#join-us-section .underline {
+  width: 150px;
+  border-bottom: 7px solid gray;
+}
+
+
+#join-us-section .button-css{
+  background: #f5593d;
+  color: #eee;
+  border-radius: 20px 20px 20px 20px;
+  width: 55%;
+  height: 43px;
+  margin-left: 20%;
+  transition: all .8s;
+}
+
+#join-us-section .button-css:hover{
+  transform: translateY(-3px);
+  background: lightsalmon;
+}
+
+.card-css{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/pricing-card-bg.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.animone{
+  animation-name: animone;
+  animation-duration: 3s;
+}
+
+@keyframes animone{
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.animtwo{
+  animation-name: animtwo;
+  animation-duration: 3s;
+}
+
+@keyframes animtwo{
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animthree{
+  animation-name: animthree;
+  animation-duration: 3s;
+}
+
+@keyframes animthree{
+  0%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.card-one{
+   box-shadow: 15px 15px 25px #444;
+}
+.card-two{
+  box-shadow: 15px 15px 25px #444;
+}
+.card-three{
+   box-shadow: 15px 15px 25px #444;
+}
+
+/* FORM-SECTION */
+#form-section {
+  
+    background: -webkit-linear-gradient(380deg, rgba(21, 31, 32, 1)0%, rgba(21, 31, 32, .95)50%,transparent 50%), url(../img/form-img.jpeg); /*0% where we want to mix two color 50% width*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.input-css{
+  background: transparent;
+  border-color: transparent;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
+  transition: all .8s;
+}
+
+.input-css:focus{
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  border-bottom: 2px solid lightsalmon;
+}
+
+
+.label-css{
+  color: gray;
+  transform: translate(10px, -50px);
+  /* margin-top: -70px;
+  margin-left: 4px;
+  font-size: 13px; */
+}
+
+.label-css:focus{
+  transform: translate(10px, -90px);
+}
+
+
+
+.button-css{
+  background: #f5593d;
+  color: #eee;
+  transition: all .8s;
+}
+
+.button-css:hover{
+  transform: translateY(-3px);
+  background: lightsalmon;
+}
+
+@media(max-width:785px){
+  #form-section {
+    background: linear-gradient(rgba(21, 31, 32, 1), rgba(21, 31, 32, .95));
+  }
+
+}
+
+/* FOOTER */
+#footer{
+  background: #151f20;
+}
+
+#footer a{
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.li-css:hover {
+  color: lightseagreen !important;
+}
+
+.email{
+  color: lightseagreen;
+}
+.line{
+  color: #eee !important;
+}
+.border-top{
+  border-top: 1px solid #eee;
+}
+/* #home-section .color-change {
+    color: yellow !important;
+} */
+
+/* .dark-overlay {
+    position: absolute;
+
+    background: rgba(0, 0, 0, 0.5);
+
+} */
